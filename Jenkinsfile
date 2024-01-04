@@ -16,7 +16,7 @@ node{
      sh "${mavenhome}/bin/mvn clean sonar:sonar"   
     }
     
-    stage("Artifact Repository in Nexus"){
+    /*stage("Artifact Repository in Nexus"){
     
         sh"${mavenhome}/bin/mvn clean deploy"
     }
@@ -26,5 +26,5 @@ node{
     sshagent(['24cf2d0b-ad99-4b8e-ad92-61afd12e6d41']) {
     sh "scp -o  StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.18.250:/opt/apache-tomcat-9.0.84/webapps/"
 }
-}
+}*/
     }//node closing
