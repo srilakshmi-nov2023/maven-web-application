@@ -11,8 +11,8 @@ node{
      sh "${mavenhome}/bin/mvn clean package"   
     
     }
-    
-   /* stage("Execute sonarqube report"){
+   /* 
+   stage("Execute sonarqube report"){
      sh "${mavenhome}/bin/mvn clean sonar:sonar"   
     }
     
