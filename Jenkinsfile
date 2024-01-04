@@ -12,11 +12,11 @@ node{
     
     }
     
-    stage("Execute sonarqube report"){
+   /* stage("Execute sonarqube report"){
      sh "${mavenhome}/bin/mvn clean sonar:sonar"   
     }
     
-    /*stage("Artifact Repository in Nexus"){
+    stage("Artifact Repository in Nexus"){
     
         sh"${mavenhome}/bin/mvn clean deploy"
     }
